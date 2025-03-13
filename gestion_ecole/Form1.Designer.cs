@@ -26,188 +26,109 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
-            label1 = new System.Windows.Forms.Label();
-            label2 = new System.Windows.Forms.Label();
-            label3 = new System.Windows.Forms.Label();
-            label4 = new System.Windows.Forms.Label();
-            t_nom = new System.Windows.Forms.TextBox();
-            t_prenom = new System.Windows.Forms.TextBox();
-            t_ville = new System.Windows.Forms.TextBox();
-            t_specialite = new System.Windows.Forms.TextBox();
-            b_Ajouter = new System.Windows.Forms.Button();
-            DataEleve = new System.Windows.Forms.DataGridView();
-            b_Rechercher = new System.Windows.Forms.Button();
-            b_Renitialiser = new System.Windows.Forms.Button();
-            b_Supprimer = new System.Windows.Forms.Button();
-            b_Modifier = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)DataEleve).BeginInit();
-            SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            label1.Location = new System.Drawing.Point(215, 42);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(58, 28);
-            label1.TabIndex = 0;
-            label1.Text = "Nom";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            label2.Location = new System.Drawing.Point(215, 87);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(85, 28);
-            label2.TabIndex = 0;
-            label2.Text = "Prénom";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            label3.Location = new System.Drawing.Point(215, 132);
-            label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(54, 28);
-            label3.TabIndex = 0;
-            label3.Text = "Ville";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            label4.Location = new System.Drawing.Point(215, 177);
-            label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(104, 28);
-            label4.TabIndex = 0;
-            label4.Text = "Spécialité";
-            // 
-            // t_nom
-            // 
-            t_nom.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            t_nom.Location = new System.Drawing.Point(410, 36);
-            t_nom.Name = "t_nom";
-            t_nom.Size = new System.Drawing.Size(615, 34);
-            t_nom.TabIndex = 1;
-            // 
-            // t_prenom
-            // 
-            t_prenom.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            t_prenom.Location = new System.Drawing.Point(410, 81);
-            t_prenom.Name = "t_prenom";
-            t_prenom.Size = new System.Drawing.Size(615, 34);
-            t_prenom.TabIndex = 2;
-            // 
-            // t_ville
-            // 
-            t_ville.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            t_ville.Location = new System.Drawing.Point(410, 126);
-            t_ville.Name = "t_ville";
-            t_ville.Size = new System.Drawing.Size(615, 34);
-            t_ville.TabIndex = 3;
-            // 
-            // t_specialite
-            // 
-            t_specialite.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            t_specialite.Location = new System.Drawing.Point(410, 171);
-            t_specialite.Name = "t_specialite";
-            t_specialite.Size = new System.Drawing.Size(615, 34);
-            t_specialite.TabIndex = 4;
-            // 
-            // b_Ajouter
-            // 
-            b_Ajouter.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
-            b_Ajouter.Location = new System.Drawing.Point(271, 232);
-            b_Ajouter.Name = "b_Ajouter";
-            b_Ajouter.Size = new System.Drawing.Size(135, 44);
-            b_Ajouter.TabIndex = 5;
-            b_Ajouter.Text = "Ajouter";
-            b_Ajouter.UseVisualStyleBackColor = true;
-            b_Ajouter.Click += b_Ajouter_Click;
-            // 
-            // DataEleve
-            // 
-            DataEleve.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DataEleve.Location = new System.Drawing.Point(311, 282);
-            DataEleve.Name = "DataEleve";
-            DataEleve.RowHeadersWidth = 102;
-            DataEleve.Size = new System.Drawing.Size(714, 400);
-            DataEleve.TabIndex = 6;
-            DataEleve.CellClick += DataEleve_CellClick;
-            // 
-            // b_Rechercher
-            // 
-            b_Rechercher.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
-            b_Rechercher.Location = new System.Drawing.Point(616, 232);
-            b_Rechercher.Name = "b_Rechercher";
-            b_Rechercher.Size = new System.Drawing.Size(142, 44);
-            b_Rechercher.TabIndex = 7;
-            b_Rechercher.Text = "Rechercher";
-            b_Rechercher.UseVisualStyleBackColor = true;
-            b_Rechercher.Click += b_Rechercher_Click;
-            // 
-            // b_Renitialiser
-            // 
-            b_Renitialiser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
-            b_Renitialiser.Location = new System.Drawing.Point(773, 232);
-            b_Renitialiser.Name = "b_Renitialiser";
-            b_Renitialiser.Size = new System.Drawing.Size(174, 44);
-            b_Renitialiser.TabIndex = 8;
-            b_Renitialiser.Text = "Réinitialiser";
-            b_Renitialiser.UseVisualStyleBackColor = true;
-            b_Renitialiser.Click += b_Renitialiser_Click;
-            // 
-            // b_Supprimer
-            // 
-            b_Supprimer.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
-            b_Supprimer.Location = new System.Drawing.Point(964, 232);
-            b_Supprimer.Name = "b_Supprimer";
-            b_Supprimer.Size = new System.Drawing.Size(174, 44);
-            b_Supprimer.TabIndex = 9;
-            b_Supprimer.Text = "Supprimer";
-            b_Supprimer.UseVisualStyleBackColor = true;
-            b_Supprimer.Click += b_Supprimer_Click;
-            // 
-            // b_Modifier
-            // 
-            b_Modifier.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
-            b_Modifier.Location = new System.Drawing.Point(425, 232);
-            b_Modifier.Name = "b_Modifier";
-            b_Modifier.Size = new System.Drawing.Size(174, 44);
-            b_Modifier.TabIndex = 10;
-            b_Modifier.Text = "Modifier";
-            b_Modifier.UseVisualStyleBackColor = true;
-            b_Modifier.Click += b_Modifier_Click;
-            // 
-            // Form1
-            // 
-            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(1308, 734);
-            Controls.Add(b_Modifier);
-            Controls.Add(b_Supprimer);
-            Controls.Add(b_Renitialiser);
-            Controls.Add(b_Rechercher);
-            Controls.Add(DataEleve);
-            Controls.Add(b_Ajouter);
-            Controls.Add(t_specialite);
-            Controls.Add(t_ville);
-            Controls.Add(t_prenom);
-            Controls.Add(t_nom);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Margin = new System.Windows.Forms.Padding(1);
-            Text = "Form1";
-            Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)DataEleve).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
-        }
+private void InitializeComponent()
+{
+    // Form Settings
+    this.Text = "Gestion des Élèves";
+    this.Size = new System.Drawing.Size(1100, 650);
+    this.StartPosition = FormStartPosition.CenterScreen;
+    this.FormBorderStyle = FormBorderStyle.FixedDialog;
+    this.MaximizeBox = false;
+    this.BackColor = Color.FromArgb(245, 245, 245); // Soft Background
+
+    // ==== GroupBox for Student Info ====
+    GroupBox groupBox = new GroupBox
+    {
+        Text = "Informations de l'Élève",
+        Font = new Font("Segoe UI", 12F, FontStyle.Bold),
+        ForeColor = Color.Black,
+        Location = new Point(30, 20),
+        Size = new Size(1000, 200),
+        BackColor = Color.White
+    };
+
+    // ==== Labels ====
+    label1 = new Label { Text = "Nom :", Location = new Point(20, 40), AutoSize = true, Font = new Font("Segoe UI", 11F) };
+    label2 = new Label { Text = "Prénom :", Location = new Point(20, 80), AutoSize = true, Font = new Font("Segoe UI", 11F) };
+    label3 = new Label { Text = "Ville :", Location = new Point(20, 120), AutoSize = true, Font = new Font("Segoe UI", 11F) };
+    label4 = new Label { Text = "Spécialité :", Location = new Point(500, 40), AutoSize = true, Font = new Font("Segoe UI", 11F) };
+
+    // ==== TextBoxes ====
+    t_nom = new TextBox { Location = new Point(100, 40), Width = 300, Font = new Font("Segoe UI", 11F), BorderStyle = BorderStyle.FixedSingle, BackColor = Color.White };
+    t_prenom = new TextBox { Location = new Point(100, 80), Width = 300, Font = new Font("Segoe UI", 11F), BorderStyle = BorderStyle.FixedSingle, BackColor = Color.White };
+    t_ville = new TextBox { Location = new Point(100, 120), Width = 300, Font = new Font("Segoe UI", 11F), BorderStyle = BorderStyle.FixedSingle, BackColor = Color.White };
+    t_specialite = new TextBox { Location = new Point(600, 40), Width = 300, Font = new Font("Segoe UI", 11F), BorderStyle = BorderStyle.FixedSingle, BackColor = Color.White };
+
+    // ==== Buttons with Modern Flat UI Colors ====
+    b_Ajouter = new Button { Text = "Ajouter", Location = new Point(30, 240), Size = new Size(150, 45), BackColor = ColorTranslator.FromHtml("#2ecc71"), FlatStyle = FlatStyle.Flat, Font = new Font("Segoe UI", 11F, FontStyle.Bold), ForeColor = Color.White };
+    b_Modifier = new Button { Text = "Modifier", Location = new Point(200, 240), Size = new Size(150, 45), BackColor = ColorTranslator.FromHtml("#f39c12"), FlatStyle = FlatStyle.Flat, Font = new Font("Segoe UI", 11F, FontStyle.Bold), ForeColor = Color.White };
+    b_Supprimer = new Button { Text = "Supprimer", Location = new Point(370, 240), Size = new Size(150, 45), BackColor = ColorTranslator.FromHtml("#e74c3c"), FlatStyle = FlatStyle.Flat, Font = new Font("Segoe UI", 11F, FontStyle.Bold), ForeColor = Color.White };
+    b_Rechercher = new Button { Text = "Rechercher", Location = new Point(540, 240), Size = new Size(150, 45), BackColor = ColorTranslator.FromHtml("#3498db"), FlatStyle = FlatStyle.Flat, Font = new Font("Segoe UI", 11F, FontStyle.Bold), ForeColor = Color.White };
+    b_Renitialiser = new Button { Text = "Réinitialiser", Location = new Point(710, 240), Size = new Size(150, 45), BackColor = ColorTranslator.FromHtml("#bdc3c7"), FlatStyle = FlatStyle.Flat, Font = new Font("Segoe UI", 11F, FontStyle.Bold), ForeColor = Color.White };
+
+    // Hover Effects for Buttons
+    b_Ajouter.FlatAppearance.BorderSize = 0; b_Ajouter.FlatAppearance.MouseOverBackColor = ControlPaint.Dark(ColorTranslator.FromHtml("#2ecc71"), 0.2f);
+    b_Modifier.FlatAppearance.BorderSize = 0; b_Modifier.FlatAppearance.MouseOverBackColor = ControlPaint.Dark(ColorTranslator.FromHtml("#f39c12"), 0.2f);
+    b_Supprimer.FlatAppearance.BorderSize = 0; b_Supprimer.FlatAppearance.MouseOverBackColor = ControlPaint.Dark(ColorTranslator.FromHtml("#e74c3c"), 0.2f);
+    b_Rechercher.FlatAppearance.BorderSize = 0; b_Rechercher.FlatAppearance.MouseOverBackColor = ControlPaint.Dark(ColorTranslator.FromHtml("#3498db"), 0.2f);
+    b_Renitialiser.FlatAppearance.BorderSize = 0; b_Renitialiser.FlatAppearance.MouseOverBackColor = ControlPaint.Dark(ColorTranslator.FromHtml("#bdc3c7"), 0.2f);
+
+    // ==== DataGridView ====
+    DataEleve = new DataGridView
+    {
+        Location = new Point(30, 310),
+        Size = new Size(1000, 250),
+        ReadOnly = true,
+        SelectionMode = DataGridViewSelectionMode.FullRowSelect,
+        BackgroundColor = Color.White,
+        BorderStyle = BorderStyle.Fixed3D,
+        ColumnHeadersDefaultCellStyle = new DataGridViewCellStyle 
+        { 
+            Font = new Font("Segoe UI", 11F, FontStyle.Bold), 
+            BackColor = Color.LightSteelBlue 
+        },
+        DefaultCellStyle = new DataGridViewCellStyle { Font = new Font("Segoe UI", 10F) }
+    };
+
+    // === Hover Effect for DataGridView Rows ===
+    DataEleve.CellMouseEnter += (s, e) =>
+    {
+        if (e.RowIndex >= 0) DataEleve.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightGray;
+    };
+    DataEleve.CellMouseLeave += (s, e) =>
+    {
+        if (e.RowIndex >= 0) DataEleve.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.White;
+    };
+
+    // === Add Controls to GroupBox ===
+    groupBox.Controls.Add(label1);
+    groupBox.Controls.Add(label2);
+    groupBox.Controls.Add(label3);
+    groupBox.Controls.Add(label4);
+    groupBox.Controls.Add(t_nom);
+    groupBox.Controls.Add(t_prenom);
+    groupBox.Controls.Add(t_ville);
+    groupBox.Controls.Add(t_specialite);
+
+    // === Add Controls to the Form ===
+    this.Controls.Add(groupBox);
+    this.Controls.Add(b_Ajouter);
+    this.Controls.Add(b_Modifier);
+    this.Controls.Add(b_Supprimer);
+    this.Controls.Add(b_Rechercher);
+    this.Controls.Add(b_Renitialiser);
+    this.Controls.Add(DataEleve);
+
+    // ==== Event Handlers ====
+    b_Ajouter.Click += b_Ajouter_Click;
+    b_Modifier.Click += b_Modifier_Click;
+    b_Supprimer.Click += b_Supprimer_Click;
+    b_Rechercher.Click += b_Rechercher_Click;
+    b_Renitialiser.Click += b_Renitialiser_Click;
+    DataEleve.CellClick += DataEleve_CellClick;
+}
+
+
 
         private System.Windows.Forms.Button b_Supprimer;
         private System.Windows.Forms.Button b_Modifier;
