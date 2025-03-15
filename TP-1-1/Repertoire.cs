@@ -78,11 +78,11 @@ public class Repertoire
         }
     }
 
-    public float GetTailleMax()
+    public float GetTaille()
     {
         float tailleMax = 0;
         for(int i=0; i<nbr_fichiers;i++)
             tailleMax+=fichiers[i].Taille;
-        return tailleMax;
+        return tailleMax/1000;
     }
 }

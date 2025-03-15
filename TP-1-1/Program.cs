@@ -38,7 +38,7 @@ class Program
         Console.WriteLine("\n-- Après suppression de 'image1' --");
         repertoire.Afficher();
 
-        float tailleMax = repertoire.GetTailleMax();
-        Console.WriteLine($"\n-- Taille totale: {tailleMax} Ko");
+        float tailleMax = repertoire.GetTaille();
+        Console.WriteLine($"\n-- Taille totale: {tailleMax} Mo");
     }
 }
