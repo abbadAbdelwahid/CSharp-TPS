@@ -135,14 +135,14 @@ namespace Gestion_Ecole
         {
             try
             {
-                // Check if any field is empty or null
+
                 if (string.IsNullOrWhiteSpace(o.Nom) ||
                     string.IsNullOrWhiteSpace(o.Prenom) ||
                     string.IsNullOrWhiteSpace(o.Ville) ||
                     string.IsNullOrWhiteSpace(o.Specialite))
                 {
                     Console.WriteLine("Error in insert: Fields cannot be empty.");
-                    return -1; // Return -1 to indicate failure
+                    return -1; 
                 }
                 string sql = "insert into eleve(nom,prenom,ville,specialite)" +
                              "values(@nom,@prenom,@ville,@specialite)";
